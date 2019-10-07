@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/quest.ogg-6c2ac1da514a931c06dcfb08ceb8c204.oggstr"
+
+[deps]
+
+source_file="res://assets/music/quest.ogg"
+dest_files=[ "res://.import/quest.ogg-6c2ac1da514a931c06dcfb08ceb8c204.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

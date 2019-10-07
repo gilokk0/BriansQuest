@@ -1,0 +1,83 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://assets/images/plain_background.png" type="Texture" id=1]
+[ext_resource path="res://scenes/end/end.gd" type="Script" id=2]
+[ext_resource path="res://assets/fonts/title.tres" type="DynamicFont" id=3]
+[ext_resource path="res://assets/fonts/buttons.tres" type="DynamicFont" id=4]
+[ext_resource path="res://scenes/button/Button.gd" type="Script" id=5]
+[ext_resource path="res://assets/fonts/text.tres" type="DynamicFont" id=6]
+[ext_resource path="res://scenes/components/fileContentDisplay/fileContentDisplay.gd" type="Script" id=7]
+[ext_resource path="res://assets/images/brian_love.png" type="Texture" id=8]
+
+[node name="TextureRect" type="TextureRect"]
+self_modulate = Color( 0.333333, 0.560784, 0.8, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+script = ExtResource( 2 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 18.4779
+margin_top = 20.0
+margin_right = 307.478
+margin_bottom = 107.0
+custom_fonts/font = ExtResource( 3 )
+text = "The End"
+
+[node name="titleBtn" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 1.06296
+margin_top = -86.0
+margin_right = 295.063
+custom_fonts/font = ExtResource( 4 )
+text = "Title Screen"
+flat = true
+align = 0
+script = ExtResource( 5 )
+sceneToLoad = "res://scenes/title/title.tscn"
+fadeSound = true
+
+[node name="exitBtn" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -151.0
+margin_top = -70.0
+margin_bottom = -6.0
+custom_fonts/font = ExtResource( 4 )
+text = "Exit"
+flat = true
+align = 0
+script = ExtResource( 5 )
+
+[node name="fileContentDisplay" type="TextEdit" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 21.7753
+margin_top = 111.225
+margin_right = -18.2247
+margin_bottom = -91.7754
+mouse_default_cursor_shape = 0
+custom_fonts/font = ExtResource( 6 )
+text = "set file path"
+readonly = true
+script = ExtResource( 7 )
+filePath = "res://scenes/end/end.txt"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -472.938
+margin_top = -320.155
+margin_right = -152.938
+margin_bottom = -0.155151
+texture = ExtResource( 8 )
+expand = true
+[connection signal="pressed" from="titleBtn" to="titleBtn" method="_on_Button_pressed"]
+[connection signal="pressed" from="exitBtn" to="." method="_on_exitBtn_pressed"]
+[connection signal="pressed" from="exitBtn" to="exitBtn" method="_on_Button_pressed"]

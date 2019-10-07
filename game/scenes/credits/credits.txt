@@ -1,0 +1,14 @@
+fonts:
+https://fontlibrary.org/en/font/jellee-typeface
+by Alfredo Marco Pradil
+License: OFL (SIL Open Font License)
+
+images:
+by Gil Carvalho (@Gilokko)
+License: Creative Commons (CC BY-SA 4.0)
+
+music:
+https://soundcloud.com/gil-carvalho-13/on-a-quest
+On A Quest
+by Gil Carvalho (@Gilokko)
+License: All Rights Reserved
