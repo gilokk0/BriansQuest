@@ -9,7 +9,7 @@ Play and find out.
 
 Use the arrow keys or WASD to move through the map.
 
-# Websites
+### Websites
 Ludum Dare: https://ldjam.com/events/ludum-dare/45/brians-quest
 
 itch.io: https://gilokko.itch.io/brians-quest
